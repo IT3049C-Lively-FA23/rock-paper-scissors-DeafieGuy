@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Type your title here</title>
     <!-- Bootstrap Styles-->
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="resources/styles/bootstrap.min.css">
     <link rel="stylesheet" href="resources/styles/styles.css" />
 </head>
@@ -13,7 +14,44 @@
 <body>
     <div class="container">
         <!-- WORK FROM INSIDE THIS CONTAINER-->
+        <h1>Rock Paper Scissors</h1>
+        <div id="welcome-screen">
+            <form id="name-form">
+                <div>
+                    <label attribute="username">Donald Durgan</label>
+                    <input id="username" class="form-control">Enter Name Here...</input>                 </div>
+                </div>
+                <button id="start-game-button">Start Game!</button>
+            </form>
+        </div>
+        <div id="game-screen">
+            <div id="score-tally">
+                <p id="score">User: 0 v CPU: 0</p>
+            </div> 
+            <form id="game-form">
+                <div>
+                    <label attribute="user-selection">Select your choice</label>
+                    <select id="user-selection"><user-selection><option>Rock</option><option>Paper</option><option>Scissors</option></user-selection></select>
+                    <button id="go-button">Go!</button>
+                </div>
+                <p>game-history</p>
+            </form>
+        </div>
+        <div class="form-group">
+            <!-- Start Game Button -->
+            <button class="btn btn-primary">Start Game!</button>
 
+            <!-- Go Button -->
+            <button class="btn btn-success">Go!</button>
+
+            <!-- Dropdown -->
+            <select class="custom-select">
+            <option selected>Choose an option</option>
+            <option value="1">Rock</option>
+            <option value="2">Paper</option>
+            <option value="3">Scissors</option>
+            </select>
+        </div>
     </div>
 
     <!-- Our own Scripts -->
