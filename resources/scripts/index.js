@@ -25,7 +25,8 @@ function updateGameHistoryUI(){
 }
 
 // start-game-button EventListener
-startGameButton.addEventListener(`click`, function () {
+startGameButton.addEventListener(`click`, function (e) {
+  e.preventDefault();
   if (usernameValue === "") {
     alert("Please enter a username to start the game.");
     return;
